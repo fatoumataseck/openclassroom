@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulaire</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+	<fieldset>
+                <legend>Etudiant</legend>
+
+                <label class="label">Matricule :</label>
+                <input id="matricule" required="required" class="input" type="text" name="matricule" value="" ><br>
+
+                <label class="label">Nom :</label>
+                <input id="nom" required="required" class="input" type="text" name="nom" value="" ><br>
+
+                <label class="label">Prenom :</label>
+                <input id="prenom" class="input" type="text" name="prenom" required="required" value="" ><br>
+
+                <label class="label">Date de naissance :</label>
+                <input id="dn" required="required" class="input" type="date" name="dn" max="2003-12-31" min="1988-12-31" value="" ><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inscription</legend>
+                <label class="label">Filiere :</label>
+                <select id="id_filiere" required name="filiere">
+                    <option selected disabled value="">selectionner une filiere</option>
+                    <option value="data science">data science</option>        
+                    <option value="data analyste">data analyste</option>                     
+                    <option value="big data">big data</option>                     
+                </select>
+
+                <label class="label">Classe :</label>
+                <select id="classe" required name="classe">
+                	<option selected disabled value="">selectionner une classe</option>
+                    <option value="debutant">data debutant</option>        
+                    <option value="intermediaire">intermediaire</option>                     
+                    <option value="avancé">avancé</option>   
+                </select>
+
+                <label class="label">Date inscription :</label>
+                <input id="date_ins" required="required" class="input" type="date" name="date_ins" value="" readonly><br>
+
+                <label class="label" for="annee_aca" name="annee_aca">Année academique :</label>
+                <input id="annee_aca" class="input" type="text" name="annee_aca" ><br>
+            </fieldset>
+
+            <button id="submit" class="submit" type="submit">Enregistrer</button>
+            <button class="reset" type="reset">Annuler</button>
+
+        </form>
+
+        <footer>
+	
+</body>
+
+</html>
